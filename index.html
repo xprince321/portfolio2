@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data:; style-src 'sha256-WGlVnFSrT7TthWM/663FJYGB8BVJbAMMa1JTPjkSJgw='; script-src 'sha256-HwDpRxS5bXfobMBtlPKhwLY/90zenxOasXl8ASAZejI=' 'sha256-fTNt2W2LH61wuJ6wljjDBPgbh3dOFGsCS0x8OIj1JPs='; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Modibo DOLO — Systems &amp; Network Administrator</title>
+<meta name="description" content="Systems and network administrator in Bamako, Mali. Fortinet NSE 1–3 and Cisco certified, with banking infrastructure operations at Bank Of Africa (BOA-MALI): perimeter security, OSPF, IPsec, Active Directory, Zabbix.">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Modibo DOLO — Systems &amp; Network Administrator">
+<meta property="og:description" content="Perimeter security, high availability and banking infrastructure operations.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232B3A8C'/%3E%3Crect x='19' y='19' width='7' height='7' rx='1' fill='%23E8590C'/%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Modibo DOLO","jobTitle":"Systems & Network Administrator","email":"mailto:dolomodibo33@gmail.com","telephone":"+22382125673","sameAs":["https://www.linkedin.com/in/modibodolo"],"address":{"@type":"PostalAddress","addressLocality":"Bamako","addressCountry":"ML"},"alumniOf":{"@type":"CollegeOrUniversity","name":"ESGIC Mali"}}</script>
+<script>(()=>{const r=document.documentElement;let t;try{t=localStorage.getItem('theme')}catch(e){}r.classList.add('js');r.dataset.theme=t==='dark'||t==='light'?t:matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'})()</script>
+<style>
+:root{--paper:#F2F3F5;--ink:#14182B;--muted:#586079;--rule:#C9CEDB;--indigo:#2B3A8C;--orange:#E8590C;--orange-ink:#C2410C;--on-orange:#14182B;color-scheme:light}
+:root[data-theme="dark"]{--paper:#12162A;--ink:#E9EBF3;--muted:#A3AAC2;--rule:#2D3552;--indigo:#9DAAFF;--orange:#FF8A3D;--orange-ink:#FF9A4D;color-scheme:dark}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:2rem}
+body{position:relative;background:var(--paper);color:var(--ink);transition:background-color .4s,color .4s;font:400 1.0625rem/1.6 "Helvetica Neue",Helvetica,"Segoe UI",Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-underline-offset:.2em;text-decoration-thickness:1px}
+a:hover{color:var(--orange-ink)}
+:focus-visible{outline:3px solid var(--indigo);outline-offset:3px;border-radius:2px}
+::selection{background:var(--orange);color:var(--on-orange)}
+.wrap{max-width:78rem;margin-inline:auto;padding-inline:clamp(1.25rem,4vw,3rem)}
+.skip{position:absolute;left:1rem;top:-5rem;z-index:9;padding:.6rem 1rem;background:var(--ink);color:var(--paper)}
+.skip:focus{top:1rem;color:var(--paper)}
+
+/* Paper grain */
+.backdrop{position:fixed;inset:0;z-index:-2;pointer-events:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.08'/%3E%3C/svg%3E") 0 0/160px 160px}
+/* Domain illustrations: firewall, router, server, shield, database, topology */
+.defs{position:absolute;width:0;height:0}
+symbol *{fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.led{fill:var(--orange);stroke:none}
+.flame,.wave,.shackle,.cap,.flow{stroke:var(--orange)}
+.scene{position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.fig{position:absolute;width:var(--w);height:var(--w);color:var(--indigo);opacity:.17;--play:running;transform:translate3d(calc(var(--mx,0)*var(--d)*1px),calc(var(--my,0)*var(--d)*1px + var(--sy,0)*var(--k)*1px),0) rotate(calc(var(--sy,0)*var(--r)*.003deg))}
+.fig.hot{color:var(--orange)}
+:root[data-theme="dark"] .fig{opacity:.26}
+.f1{top:2%;right:5%;--w:260px;--d:90;--k:.1;--r:-4}
+.f2{top:15%;left:1%;--w:190px;--d:-70;--k:-.08;--r:5}
+.f3{top:29%;right:3%;--w:170px;--d:110;--k:.12;--r:6}
+.f4{top:43%;left:2%;--w:200px;--d:-90;--k:-.1;--r:-5}
+.f5{top:57%;right:6%;--w:160px;--d:70;--k:.09;--r:4}
+.f6{top:70%;left:1%;--w:170px;--d:-100;--k:-.12;--r:5}
+.f7{top:82%;right:4%;--w:230px;--d:80;--k:.1;--r:-4}
+.f8{top:93%;left:6%;--w:130px;--d:-60;--k:-.07;--r:6}
+.halo{position:fixed;left:0;top:0;z-index:-1;width:32rem;height:32rem;margin:-16rem 0 0 -16rem;border-radius:50%;background:radial-gradient(circle,rgba(232,89,12,.16),transparent 65%);opacity:0;pointer-events:none;transition:opacity .6s}
+.halo.on{opacity:1}
+@media (pointer:coarse){.halo{display:none}}
+.top{padding-block:clamp(3rem,10vw,8rem) clamp(2.5rem,6vw,4.5rem)}
+h1{font-size:clamp(3.4rem,12.5vw,9.5rem);font-weight:700;line-height:.88;letter-spacing:-.05em}
+.role{margin-top:1.5rem;max-width:30ch;font-size:clamp(1.2rem,2.4vw,1.75rem);font-weight:500;line-height:1.2;letter-spacing:-.01em}
+
+.grid{display:grid;gap:3rem}
+@media (min-width:62rem){.grid{grid-template-columns:12rem minmax(0,1fr);gap:4rem}.rail{position:sticky;top:2rem}.rail ul{display:block}}
+.rail{align-self:start;font-size:.95rem}
+.rail ul{display:flex;flex-wrap:wrap;gap:0 1.25rem;padding:0;list-style:none}
+.rail a{display:block;padding:.5rem 0;color:var(--muted);text-decoration:none;transition:color .2s}
+.rail a:hover,.rail a[aria-current]{color:var(--ink)}
+.rail a[aria-current]{font-weight:650;text-decoration:underline 2px var(--orange);text-underline-offset:.35em}
+.avail{max-width:20ch;margin-top:1.25rem;color:var(--muted)}
+
+main section{padding-bottom:clamp(3.5rem,8vw,6rem)}
+h2{position:relative;margin-bottom:2rem;padding-top:.8rem;border-top:2px solid var(--ink);font-size:1.1rem;font-weight:700}
+h2::before{content:"";position:absolute;top:-2px;left:0;width:3rem;height:2px;background:var(--orange)}
+h3{font-size:1.2rem;font-weight:650;line-height:1.25;letter-spacing:-.01em}
+.lede{max-width:36em;font:clamp(1.3rem,2.3vw,1.7rem)/1.45 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+.lede+p{max-width:62ch;margin-top:1.25rem;color:var(--muted)}
+.facts{display:grid;gap:1.25rem 2rem;margin-top:2.5rem}
+@media (min-width:40rem){.facts{grid-template-columns:repeat(2,1fr)}}
+.facts dt{color:var(--muted);font-size:.9rem}
+.facts dd{font-weight:600}
+
+.run{position:relative;margin-left:.5rem;padding:0;list-style:none}
+.run::before{content:"";position:absolute;left:0;top:.6rem;bottom:.6rem;width:2px;background:var(--rule)}
+.run>li{position:relative;padding:0 0 2.5rem 2rem}
+.run>li::before{content:"";position:absolute;left:-7px;top:.35rem;width:16px;height:16px;border:2px solid var(--ink);border-radius:3px;background:var(--paper)}
+.run>.now::before{background:var(--orange)}
+.run::after{content:"";position:absolute;left:0;top:.6rem;bottom:.6rem;width:2px;background:var(--orange);transform-origin:top;transform:scaleY(var(--fill,0))}
+.run>li::before{transition:background-color .3s,transform .3s}
+.run>li.on::before{background:var(--orange);transform:scale(1.15)}
+.meta{display:flex;flex-wrap:wrap;gap:0 1.5rem;margin-top:.2rem;color:var(--muted);font-size:.95rem}
+.run ul{max-width:62ch;margin-top:.75rem;padding-left:1.1rem}
+.run ul li{padding-bottom:.3rem}
+@media (prefers-reduced-motion:no-preference){.run::before{transform-origin:top;animation:draw 1.1s cubic-bezier(.2,.7,.1,1) both}@keyframes draw{from{transform:scaleY(0)}}}
+
+.cases{display:grid;gap:2.25rem 2.5rem;padding:0;list-style:none}
+@media (min-width:44rem){.cases{grid-template-columns:repeat(2,1fr)}}
+.cases li{padding-top:1rem;border-top:1px solid var(--rule)}
+.kind{margin-bottom:.35rem;color:var(--muted);font-size:.9rem}
+.cases h3+p{margin-top:.6rem;color:var(--muted)}
+
+.skills>div{display:grid;gap:.4rem 2rem;padding:1.1rem 0;border-top:1px solid var(--rule)}
+@media (min-width:44rem){.skills>div{grid-template-columns:11rem 1fr}}
+.skills dt{font-weight:650}
+.skills ul{padding:0;list-style:none}
+
+.creds{display:grid;gap:2.5rem}
+@media (min-width:44rem){.creds{grid-template-columns:repeat(2,1fr)}}
+.creds h3{margin-bottom:.75rem}
+.creds ul{padding:0;list-style:none}
+.creds li{padding:.9rem 0;border-top:1px solid var(--rule)}
+.creds strong{display:block;font-weight:600}
+.creds span{display:block;color:var(--muted);font-size:.95rem}
+
+.mail{display:inline-block;font-size:clamp(1.5rem,4.4vw,3rem);font-weight:700;line-height:1.1;letter-spacing:-.03em;overflow-wrap:anywhere;text-decoration:underline 3px var(--orange);text-underline-offset:.14em}
+.lines{display:grid;gap:.35rem;margin:1.75rem 0;color:var(--muted)}
+.actions{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{min-height:2.75rem;padding:0 1.15rem;border:2px solid var(--ink);border-radius:.4rem;background:transparent;color:var(--ink);font:inherit;font-size:.95rem;font-weight:600;cursor:pointer;transition:transform .2s cubic-bezier(.2,.7,.1,1),background-color .2s,color .2s}
+.btn:hover{border-color:var(--orange);background:var(--orange);color:var(--on-orange);transform:translateY(-2px)}
+.btn:active{transform:none}
+.status{min-height:1.5rem;margin-top:1rem;color:var(--muted);font-size:.95rem}
+
+footer{padding-block:1.75rem 2.5rem;border-top:1px solid var(--rule);color:var(--muted);font-size:.9rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 2rem}
+
+/* Interactive icons */
+.ico{width:3.25rem;height:3.25rem;color:var(--indigo);--play:paused;transform:perspective(520px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .3s cubic-bezier(.2,.7,.1,1),color .3s}
+.cases .ico{margin-bottom:.9rem}
+.skills dt{display:flex;align-items:center;gap:.7rem}
+.skills .ico{flex:none;width:2.25rem;height:2.25rem}
+.cases>li:hover,.skills>div:hover{border-top-color:var(--orange)}
+.cases>li:hover .ico,.skills>div:hover .ico{--play:running;color:var(--orange-ink)}
+/* Page chrome */
+.meter{position:fixed;top:0;left:0;right:0;z-index:6;height:3px;background:var(--orange);transform-origin:left;transform:scaleX(var(--p,0));pointer-events:none}
+.theme{position:fixed;top:1rem;right:1rem;z-index:5;display:grid;place-items:center;width:2.75rem;height:2.75rem;padding:0;border:2px solid var(--ink);border-radius:50%;background:var(--paper);color:var(--ink);cursor:pointer;transition:transform .35s cubic-bezier(.2,.7,.1,1),background-color .25s,border-color .25s,color .25s}
+.theme:hover{transform:rotate(25deg) scale(1.06);border-color:var(--orange);background:var(--orange);color:var(--on-orange)}
+.theme svg{width:1.3rem;height:1.3rem;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.theme .sun{display:none}
+:root[data-theme="dark"] .theme .sun{display:block}
+:root[data-theme="dark"] .theme .moon{display:none}
+@media (prefers-reduced-motion:no-preference){
+.led{animation:blink 1.2s steps(1) infinite;animation-play-state:var(--play,paused)}
+.led.b{animation-delay:.4s}.led.c{animation-delay:.8s}
+.flame{transform-box:fill-box;transform-origin:50% 100%;animation:flick .45s ease-in-out infinite alternate;animation-play-state:var(--play,paused)}
+.wave{animation:blink 1.3s ease-in-out infinite;animation-play-state:var(--play,paused)}
+.wave.w2{animation-delay:.25s}
+.flow{stroke-dasharray:3 6;animation:flow .9s linear infinite;animation-play-state:var(--play,paused)}
+.cap,.shackle{transform-box:fill-box;animation:hop .7s ease-in-out infinite alternate;animation-play-state:var(--play,paused)}
+@keyframes blink{50%{opacity:.15}}
+@keyframes flick{to{transform:scale(.86,1.14)}}
+@keyframes flow{to{stroke-dashoffset:-18}}
+@keyframes hop{to{transform:translateY(-3px)}}
+.top{transform:translate3d(0,calc(var(--sy,0)*.16px),0);opacity:calc(1 - var(--sy,0)/1100)}
+.js .rv{opacity:0;transform:translate3d(0,1.6rem,0);transition:opacity .8s cubic-bezier(.2,.7,.1,1) calc(var(--i,0)*90ms),transform .8s cubic-bezier(.2,.7,.1,1) calc(var(--i,0)*90ms)}
+.js .skills>.rv{transform:translate3d(-1.6rem,0,0)}
+.js .rv.in{opacity:1;transform:none}
+.js h2::before{transform:scaleX(0);transform-origin:left;transition:transform .8s cubic-bezier(.2,.7,.1,1) .2s}
+.js h2.in::before{transform:none}
+}
+
+@media print{
+:root,:root[data-theme]{--paper:#fff;--ink:#000;--muted:#444;--rule:#999;--indigo:#000;--orange:#C2410C;--orange-ink:#C2410C}
+.rail,.actions,.status,.skip,.backdrop,.scene,.halo,.meter,.theme,.run::after{display:none}
+.grid{display:block}.top{padding-block:0 1.5rem}h1{font-size:3rem}
+main section{padding-bottom:1.5rem;break-inside:avoid-page}
+.run::before{animation:none}
+.js .rv{opacity:1;transform:none;transition:none}.js h2::before{transform:none}.top{transform:none;opacity:1}
+}
+</style>
+</head>
+<body>
+<svg class="defs" width="0" height="0" aria-hidden="true" focusable="false">
+<symbol id="i-firewall" viewBox="0 0 64 64"><path class="flame" d="M32 3c2 5 7 8 7 13a7 7 0 0 1-14 0c0-3 1-5 3-7 0 2 1 3 2 3 0-3 1-6 2-9z"/><path d="M8 26h48v32H8zM8 37h48M8 48h48M32 26v11M20 37v11M44 37v11M32 48v10"/></symbol>
+<symbol id="i-router" viewBox="0 0 64 64"><path d="M6 38h52a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V40a2 2 0 0 1 2-2zM16 38L12 14M48 38l4-24M34 46h16"/><path class="wave" d="M24 24a11 11 0 0 1 16 0"/><path class="wave w2" d="M27 29a6 6 0 0 1 10 0"/><circle class="led" cx="14" cy="46" r="2"/><circle class="led b" cx="22" cy="46" r="2"/></symbol>
+<symbol id="i-server" viewBox="0 0 64 64"><path d="M10 8h44a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2zM10 26h44a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V28a2 2 0 0 1 2-2zM10 44h44a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V46a2 2 0 0 1 2-2zM28 15h20M28 33h20M28 51h20"/><circle class="led" cx="17" cy="15" r="2"/><circle class="led b" cx="17" cy="33" r="2"/><circle class="led c" cx="17" cy="51" r="2"/></symbol>
+<symbol id="i-shield" viewBox="0 0 64 64"><path d="M32 5l21 8v15c0 14-9 24-21 30C20 52 11 42 11 28V13z"/><rect x="24" y="29" width="16" height="13" rx="2"/><path class="shackle" d="M27 29v-4a5 5 0 0 1 10 0v4"/></symbol>
+<symbol id="i-db" viewBox="0 0 64 64"><ellipse class="cap" cx="32" cy="14" rx="20" ry="7"/><path d="M12 14v18c0 4 9 7 20 7s20-3 20-7V14M12 32v18c0 4 9 7 20 7s20-3 20-7V32"/></symbol>
+<symbol id="i-topology" viewBox="0 0 64 64"><path class="flow" d="M27 27L13 14M37 27l14-13M27 37L13 50M37 37l14 13"/><circle cx="32" cy="32" r="7"/><circle cx="10" cy="11" r="4"/><circle cx="54" cy="11" r="4"/><circle cx="10" cy="53" r="4"/><circle cx="54" cy="53" r="4"/></symbol>
+</svg>
+<div class="meter" id="meter" aria-hidden="true"></div>
+<div class="backdrop" aria-hidden="true"></div>
+<div class="scene" id="scene" aria-hidden="true">
+<svg class="fig f1"><use href="#i-topology"/></svg>
+<svg class="fig f2"><use href="#i-firewall"/></svg>
+<svg class="fig f3 hot"><use href="#i-router"/></svg>
+<svg class="fig f4"><use href="#i-server"/></svg>
+<svg class="fig f5"><use href="#i-shield"/></svg>
+<svg class="fig f6 hot"><use href="#i-db"/></svg>
+<svg class="fig f7"><use href="#i-topology"/></svg>
+<svg class="fig f8"><use href="#i-server"/></svg>
+</div>
+<div class="halo" id="halo" aria-hidden="true"></div>
+<button type="button" class="theme" id="theme" aria-label="Night mode" aria-pressed="false">
+<svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"/></svg>
+<svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></svg>
+</button>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="wrap top">
+<h1>Modibo<br>DOLO</h1>
+<p class="role">Systems and network administrator: perimeter security and high availability</p>
+</header>
+
+<div class="wrap grid">
+<div class="rail">
+<nav aria-label="Sections">
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#architectures">Architectures</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#credentials">Credentials</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<p class="avail">Available for international, remote and on-site roles.</p>
+</div>
+
+<main id="main" tabindex="-1">
+
+<section id="about">
+<h2>About</h2>
+<p class="lede">Systems and network administrator with a Master 1 in Computer Systems &amp; Security (Bac+4), certified Fortinet NSE 1–3 and Cisco, with proven operations experience in mission-critical banking infrastructure at the headquarters of Bank Of Africa (BOA-MALI).</p>
+<p>Operational maintenance (MCO), secure dynamic routing, high availability, level 1 to 3 incident resolution through ITSM ticketing, Active Directory and Windows Server, Linux (Ubuntu and Debian), Zabbix and PostgreSQL observability, and firewalling with FortiGate and PfSense.</p>
+<dl class="facts">
+<div><dt>Based in</dt><dd>Bamako, Mali</dd></div>
+<div><dt>Experience</dt><dd>4+ years in IT, network and telecom operations</dd></div>
+<div><dt>Environment</dt><dd>Banking headquarters, BOA-MALI</dd></div>
+<div><dt>Security</dt><dd>FortiGate NSE 1–3, PfSense</dd></div>
+<div><dt>Routing and VPN</dt><dd>OSPF, IPsec AES-256</dd></div>
+<div><dt>Systems</dt><dd>Windows Server 2019/2022, Linux</dd></div>
+</dl>
+</section>
+
+<section id="experience">
+<h2>Experience</h2>
+<ol class="run">
+<li class="now">
+<h3>Network and System Support (Level 2/3)</h3>
+<p class="meta"><span>Creative Techno MALI, Bamako</span><span>April 2026 – Present</span></p>
+<ul>
+<li>Deployment and high availability (HA) maintenance of critical enterprise servers and network infrastructure.</li>
+<li>Active connectivity monitoring and real-time LAN/WAN traffic flow optimization.</li>
+<li>Implementation and enforcement of system and network security protocols.</li>
+<li>Proactive level 2/3 incident resolution and root-cause analysis through structured ITSM ticketing.</li>
+</ul>
+</li>
+<li>
+<h3>Network &amp; System Administrator Junior</h3>
+<p class="meta"><span>Creative Techno MALI, on site at Bank Of Africa (BOA-MALI) Headquarters, Bamako</span><span>April 2025 – April 2026</span></p>
+<ul>
+<li>Preventive and corrective operational maintenance (MCO) of mission-critical banking hardware and workstations.</li>
+<li>Rapid incident response and continuity assurance under strict banking security, high availability and confidentiality SLAs.</li>
+<li>End-to-end ITSM ticketing, incident escalation coordination and operational SLA reporting.</li>
+</ul>
+</li>
+<li>
+<h3>IT Maintenance Intern</h3>
+<p class="meta"><span>Bank Of Africa (BOA-MALI) Headquarters, Bamako</span><span>April 2024 – April 2025</span></p>
+<ul>
+<li>Level 1 preventive and corrective maintenance across banking headquarters departments.</li>
+<li>Hardware and software troubleshooting of workstations, banking peripherals and LAN connectivity.</li>
+<li>Daily technical user support in line with banking compliance and operational continuity standards.</li>
+</ul>
+</li>
+<li>
+<h3>Systems &amp; Network Administrator Intern</h3>
+<p class="meta"><span>GROUPE PRIMA S.A, Bamako</span><span>July 2023 – November 2023</span></p>
+<ul>
+<li>Active Directory domain integration of corporate workstations and structured Organizational Unit (OU) management.</li>
+<li>Design and deployment of enterprise-wide Group Policy Objects (GPO) enforcing workstation security policies.</li>
+<li>Configuration of PfSense firewall filtering rules and secure client-to-site VPN remote access.</li>
+<li>Continuous network monitoring, connectivity diagnostics and infrastructure troubleshooting.</li>
+</ul>
+</li>
+<li>
+<h3>Network &amp; Telecom Technician</h3>
+<p class="meta"><span>HUTACOM Technologie Sarl, Bamako</span><span>July 2022 – May 2023</span></p>
+<ul>
+<li>FTTH (Fiber to the Home) fiber optic deployment, fusion splicing and optical attenuation testing.</li>
+<li>Installation, configuration and preventive maintenance of IP video surveillance infrastructures.</li>
+</ul>
+</li>
+</ol>
+</section>
+
+<section id="architectures">
+<h2>Architectures</h2>
+<ul class="cases">
+<li>
+<svg class="ico"><use href="#i-firewall"/></svg>
+<p class="kind">Perimeter security and routing</p>
+<h3>FortiGate IPsec Site-to-Site VPN &amp; OSPF Segmentation</h3>
+<p>Dual-site perimeter architecture using FortiGate NGFW appliances, AES-256 encrypted site-to-site IPsec tunnels, OSPF dynamic routing convergence and strict 802.1Q VLAN segmentation.</p>
+</li>
+<li>
+<svg class="ico"><use href="#i-router"/></svg>
+<p class="kind">Encrypted WAN backbone</p>
+<h3>Cisco 7200 AES-256 Encrypted Backbone</h3>
+<p>High-resiliency WAN routing backbone built on Cisco 7200 series routers, combining OSPF dynamic route convergence with AES-256 site-to-site IPsec encryption.</p>
+</li>
+<li>
+<svg class="ico"><use href="#i-db"/></svg>
+<p class="kind">Bachelor’s thesis, honors: Excellent</p>
+<h3>Enterprise Observability: Zabbix &amp; PostgreSQL</h3>
+<p>End-to-end deployment of a centralized Zabbix network and system monitoring platform, backed by a performance-tuned PostgreSQL database for high-frequency telemetry.</p>
+</li>
+<li>
+<svg class="ico"><use href="#i-server"/></svg>
+<p class="kind">System architecture and webinar</p>
+<h3>Windows Server 2019 Active Directory &amp; Hyper-V Blueprint</h3>
+<p>Authored a practical implementation guide for a Windows Server 2019 domain controller, AD DS and Hyper-V virtualization, and led a live technical webinar.</p>
+</li>
+</ul>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<dl class="skills">
+<div><dt><svg class="ico"><use href="#i-router"/></svg>Network and routing</dt><dd><ul>
+<li>Cisco routers (Cisco 7200) and switches</li>
+<li>Dynamic routing with OSPF</li>
+<li>VLAN segmentation and 802.1Q trunking</li>
+<li>LAN/WAN traffic optimization and FTTH</li>
+</ul></dd></div>
+<div><dt><svg class="ico"><use href="#i-shield"/></svg>Security and firewalls</dt><dd><ul>
+<li>FortiGate NGFW (NSE 1, 2 &amp; 3 certified)</li>
+<li>PfSense firewalling and filtering rules</li>
+<li>IPsec site-to-site (AES-256) and client VPN</li>
+</ul></dd></div>
+<div><dt><svg class="ico"><use href="#i-server"/></svg>Systems and virtualization</dt><dd><ul>
+<li>Windows Server (2019/2022) and Active Directory</li>
+<li>Group Policy Objects (GPO) and Microsoft 365</li>
+<li>Hyper-V virtualization and Linux (Ubuntu/Debian)</li>
+</ul></dd></div>
+<div><dt><svg class="ico"><use href="#i-topology"/></svg>Monitoring and ITSM</dt><dd><ul>
+<li>Zabbix infrastructure monitoring</li>
+<li>PostgreSQL tuning, operational MCO and ITSM ticketing</li>
+</ul></dd></div>
+</dl>
+</section>
+
+<section id="credentials">
+<h2>Credentials</h2>
+<div class="creds">
+<div>
+<h3>Certifications</h3>
+<ul>
+<li><strong>Fortinet Network Security Expert (NSE) 1, 2 &amp; 3</strong><span>Fortinet, October 2026</span><span>Threat landscape, Security Fabric and Fortinet NGFW solutions</span></li>
+<li><strong>Cisco Networking Academy Learn-A-Thon 2026</strong><span>Cisco, 2026</span><span>Applied enterprise networking and cybersecurity operations challenge</span></li>
+<li><strong>Network Support and Security</strong><span>Cisco, January 2026</span><span>Endpoint hardening, network troubleshooting and threat mitigation</span></li>
+<li><strong>Introduction to Cybersecurity</strong><span>Cisco, September 2024</span><span>Cyber defense principles, confidentiality, integrity and availability</span></li>
+<li><strong>CCNA: Introduction to Networks</strong><span>Cisco, November 2023</span><span>IPv4/IPv6 addressing, Ethernet switching, routing fundamentals and Cisco IOS</span></li>
+</ul>
+</div>
+<div>
+<h3>Education, ESGIC Mali</h3>
+<ul>
+<li><strong>Master 1 in Computer Systems &amp; Security (Bac+4)</strong><span>2024</span><span>Program completed; official certificate issuance in progress</span></li>
+<li><strong>Professional Bachelor’s Degree in Networks &amp; Telecommunications (Honors: Excellent)</strong><span>October 2023 – July 2024</span><span>Thesis: Zabbix monitoring deployment and PostgreSQL optimization</span></li>
+<li><strong>DUT in Networks (Honors: Bien)</strong><span>October 2022 – June 2023</span><span>Network architecture, routing, switching and Linux/Windows systems</span></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<a class="mail" href="mailto:dolomodibo33@gmail.com">dolomodibo33@gmail.com</a>
+<div class="lines">
+<p>Phone and WhatsApp: <a href="tel:+22382125673">+223 82 12 56 73</a>, <a href="tel:+22364659005">+223 64 65 90 05</a></p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/modibodolo" target="_blank" rel="noopener noreferrer">linkedin.com/in/modibodolo</a></p>
+<p>Based in Bamako, Mali. Open to international relocation, remote work and on-site roles.</p>
+</div>
+<div class="actions">
+<button type="button" class="btn" id="copy-email">Copy email address</button>
+<button type="button" class="btn" id="vcard">Download contact card</button>
+<button type="button" class="btn" id="print">Save as PDF</button>
+</div>
+<p class="status" id="status" role="status"></p>
+</section>
+
+</main>
+</div>
+
+<footer>
+<div class="wrap">
+<p><strong>Modibo DOLO</strong>, Systems &amp; Network Administrator</p>
+<p>Bamako, Mali © 2026</p>
+</div>
+</footer>
+
+<script>
+(() => {
+  'use strict';
+  const EMAIL = 'dolomodibo33@gmail.com';
+  const root = document.documentElement;
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const finePointer = matchMedia('(pointer: fine)').matches;
+  const $ = (id) => document.getElementById(id);
+  const say = (text) => { $('status').textContent = text; };
+
+  /* Day and night mode */
+  const themeButton = $('theme');
+  const syncTheme = () => themeButton.setAttribute('aria-pressed', String(root.dataset.theme === 'dark'));
+  themeButton.addEventListener('click', () => {
+    const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    root.dataset.theme = next;
+    try { localStorage.setItem('theme', next); } catch { /* storage unavailable */ }
+    syncTheme();
+  });
+  syncTheme();
+
+  /* Contact actions */
+  $('copy-email').addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(EMAIL);
+      say('Email address copied.');
+    } catch {
+      say('Copy is not available here. Select the address above instead.');
+    }
+  });
+
+  $('vcard').addEventListener('click', () => {
+    const card = [
+      'BEGIN:VCARD', 'VERSION:3.0', 'N:DOLO;Modibo;;;', 'FN:Modibo DOLO',
+      'TITLE:Systems & Network Administrator', 'ORG:Creative Techno MALI',
+      'TEL;TYPE=CELL,VOICE:+22382125673', 'TEL;TYPE=WORK,VOICE:+22364659005',
+      'EMAIL;TYPE=PREF,INTERNET:' + EMAIL, 'URL:https://www.linkedin.com/in/modibodolo',
+      'ADR;TYPE=WORK:;;;Bamako;;;Mali', 'END:VCARD'
+    ].join('\r\n');
+    const url = URL.createObjectURL(new Blob([card], { type: 'text/vcard;charset=utf-8' }));
+    const link = Object.assign(document.createElement('a'), { href: url, download: 'Modibo_DOLO.vcf' });
+    document.body.append(link);
+    link.click();
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    say('Contact card downloaded.');
+  });
+
+  $('print').addEventListener('click', () => window.print());
+
+  /* Section index follows the reader */
+  if ('IntersectionObserver' in window) {
+    const navLinks = [...document.querySelectorAll('.rail a')];
+    const spy = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        for (const link of navLinks) {
+          if (link.hash === '#' + entry.target.id) link.setAttribute('aria-current', 'true');
+          else link.removeAttribute('aria-current');
+        }
+      }
+    }, { rootMargin: '-20% 0px -70% 0px' });
+    document.querySelectorAll('main section[id]').forEach((section) => spy.observe(section));
+  }
+
+  const run = document.querySelector('.run');
+  const stops = [...run.children];
+
+  if (reduced) {
+    stops.forEach((stop) => stop.classList.add('on'));
+    run.style.setProperty('--fill', '1');
+    return;
+  }
+
+  /* Reveal content as it enters the viewport */
+  if ('IntersectionObserver' in window) {
+    const reveal = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        entry.target.classList.add('in');
+        reveal.unobserve(entry.target);
+      }
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    document.querySelectorAll('h2,.lede,.lede+p,.facts>div,.run>li,.cases>li,.skills>div,.creds li,.mail,.lines,.actions').forEach((el) => {
+      el.style.setProperty('--i', [...el.parentElement.children].indexOf(el) % 5);
+      el.classList.add('rv');
+      reveal.observe(el);
+    });
+  }
+
+  /* Scroll and pointer motion, one frame loop */
+  const scene = $('scene');
+  const halo = $('halo');
+  const meter = $('meter');
+  const hero = document.querySelector('.top');
+  let scrollY = window.scrollY, mx = 0, my = 0;
+  let haloX = 0, haloY = 0, targetX = 0, targetY = 0, queued = false;
+
+  const frame = () => {
+    queued = false;
+    const vh = innerHeight;
+    const probe = vh * 0.6;
+    const runBox = run.getBoundingClientRect();
+    const lit = stops.map((stop) => stop.getBoundingClientRect().top < probe);
+    const range = Math.max(1, root.scrollHeight - vh);
+    meter.style.setProperty('--p', (scrollY / range).toFixed(4));
+    scene.style.setProperty('--sy', scrollY.toFixed(1));
+    scene.style.setProperty('--mx', mx.toFixed(3));
+    scene.style.setProperty('--my', my.toFixed(3));
+    hero.style.setProperty('--sy', scrollY.toFixed(1));
+    run.style.setProperty('--fill', Math.min(1, Math.max(0, (probe - runBox.top) / runBox.height)).toFixed(4));
+    stops.forEach((stop, i) => stop.classList.toggle('on', lit[i]));
+    haloX += (targetX - haloX) * 0.14;
+    haloY += (targetY - haloY) * 0.14;
+    halo.style.transform = 'translate3d(' + haloX.toFixed(1) + 'px,' + haloY.toFixed(1) + 'px,0)';
+    if (Math.abs(targetX - haloX) + Math.abs(targetY - haloY) > 1) request();
+  };
+  const request = () => { if (!queued) { queued = true; requestAnimationFrame(frame); } };
+
+  addEventListener('scroll', () => { scrollY = window.scrollY; request(); }, { passive: true });
+  addEventListener('resize', request, { passive: true });
+  addEventListener('pointermove', (event) => {
+    if (event.pointerType === 'touch') return;
+    mx = event.clientX / innerWidth - 0.5;
+    my = event.clientY / innerHeight - 0.5;
+    targetX = event.clientX;
+    targetY = event.clientY;
+    halo.classList.add('on');
+    request();
+  }, { passive: true });
+  request();
+
+  /* Icons tilt toward the pointer */
+  if (finePointer) {
+    document.querySelectorAll('.cases>li,.skills>div').forEach((card) => {
+      const icon = card.querySelector('.ico');
+      card.addEventListener('pointermove', (event) => {
+        const box = card.getBoundingClientRect();
+        icon.style.setProperty('--ry', (((event.clientX - box.left) / box.width - 0.5) * 40).toFixed(1) + 'deg');
+        icon.style.setProperty('--rx', ((0.5 - (event.clientY - box.top) / box.height) * 40).toFixed(1) + 'deg');
+      });
+      card.addEventListener('pointerleave', () => {
+        icon.style.removeProperty('--rx');
+        icon.style.removeProperty('--ry');
+      });
+    });
+  }
+})();
+</script>
+</body>
+</html>
